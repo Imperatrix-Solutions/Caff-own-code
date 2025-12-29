@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caff Own Coffee | Jagatpura, Jaipur</title>
+    <link rel="stylesheet" href="style-cafe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="language-toggle">
+    <button id="langBtn" onclick="toggleLanguage()">हिंदी में देखें</button>
+</div>
+
+<header>
+    <div class="container">
+        <h1><span id="header-title">Caff Own Coffee</span></h1>
+        <p id="header-subtitle">Coffee Shop in Jagatpura, Jaipur</p>
+        <div class="rating">
+            <span class="stars">⭐⭐⭐⭐⭐</span>
+            <span id="rating-text">4.8 (145 reviews)</span>
+        </div>
+        <div class="badge open-badge" id="open-badge">Open</div>
+    </div>
+</header>
+
+<section class="hero">
+    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&q=80" alt="Caff Own Coffee">
+    <div class="hero-overlay">
+        <h2 id="hero-title">Cafe at Central Spine, Jagatpura</h2>
+        <p id="hero-text">Coffee, food, desserts and late-night dining</p>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <a href="https://wa.me/917727066475?text=Hi!%20I%20want%20to%20know%20about%20Caff%20Own%20Coffee" class="btn btn-primary">
+            <span class="btn-icon">💬</span> <span id="whatsapp-btn">WhatsApp</span>
+        </a>
+        <a href="tel:+917727066475" class="btn btn-secondary">
+            <span class="btn-icon">📞</span> <span id="call-btn">Call</span>
+        </a>
+    </div>
+</section>
+
+<section class="about">
+    <div class="container">
+        <h2 id="about-title">About Caff Own Coffee</h2>
+        <p id="about-text">
+            A coffee shop in Jagatpura offering espresso-based coffee, cold brews, frappes,
+            mocktails, pizzas, wraps, sandwiches, Chinese food and desserts.
+            Open till midnight with dine-in, takeaway and delivery options.
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">🍽️</span>
+                <h3 id="feature1-title">Dine-In</h3>
+                <p id="feature1-text">Available</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📦</span>
+                <h3 id="feature2-title">Takeaway</h3>
+                <p id="feature2-text">Available</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🚗</span>
+                <h3 id="feature3-title">Drive-Through</h3>
+                <p id="feature3-text">Available</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🛵</span>
+                <h3 id="feature4-title">Delivery</h3>
+                <p id="feature4-text">Available</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu">
+    <div class="container">
+        <h2 id="menu-title">Our Menu</h2>
+
+        <div class="menu-category">
+            <h3 id="menu-hot-title">☕ Coffee</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><div class="menu-item-header"><span id="item-espresso">Espresso (30 ml)</span><span class="price">₹20</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-cappuccino">Cappuccino</span><span class="price">₹70</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-latte">Café Latte</span><span class="price">₹70</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-vanillalatte">Vanilla Latte</span><span class="price">₹80</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-nutellacap">Nutella Cappuccino</span><span class="price">₹100</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-coldcoffee">Cold Coffee</span><span class="price">₹70</span></div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 id="menu-shake-title">🥤 Shakes</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><div class="menu-item-header"><span id="item-peanutshake">Peanut Butter Shake</span><span class="price">₹110</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-butterscotch">Butterscotch Shake</span><span class="price">₹100</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-oreoshake">Oreo Shake</span><span class="price">₹110</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-nutellashake">Nutella Shake</span><span class="price">₹140</span></div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 id="menu-snacks-title">🍔 Snacks & Fast Food</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><div class="menu-item-header"><span id="item-vegsand">Veg Grilled Sandwich</span><span class="price">₹70</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-cheesesand">Cheese Grilled Sandwich</span><span class="price">₹80</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-paneersand">Paneer Tikka Sandwich</span><span class="price">₹110</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-vegburger">Veg Burger</span><span class="price">₹40</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-cheeseburger">Cheese Burger</span><span class="price">₹50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-fries">French Fries</span><span class="price">₹50</span></div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 id="menu-maggie-title">🍜 Maggie</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><div class="menu-item-header"><span id="item-vegmaggie">Vegetable Maggie</span><span class="price">₹50</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-tandoorimaggie">Tandoori Maggie</span><span class="price">₹70</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-perimaggie">Peri-Peri Maggie</span><span class="price">₹80</span></div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 id="menu-pizza-title">🍕 Pizza</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><div class="menu-item-header"><span id="item-cheesepizza">Cheese Margherita</span><span class="price">₹110</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-farmpizza">Farm Fresh Pizza</span><span class="price">₹120</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-paneerpizza">Tandoori Paneer Pizza</span><span class="price">₹150</span></div></div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3 id="menu-mocktail-title">🧃 Mocktails & Iced Tea</h3>
+            <div class="menu-grid">
+                <div class="menu-item"><div class="menu-item-header"><span id="item-watermelon">Watermelon Litchi Punch</span><span class="price">₹90</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-mojito">Virgin Mojito</span><span class="price">₹70</span></div></div>
+                <div class="menu-item"><div class="menu-item-header"><span id="item-icedtea">Lemon Iced Tea</span><span class="price">₹60</span></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+        <h2>What Customers Say</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">
+                    “Very good coffee quality and peaceful place. Came here with friends after college.
+                    Cold brew was really good.”
+                </p>
+                <p class="review-author">– Rohit Sharma</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">
+                    “Nice ambience and polite staff. Prices are reasonable compared to nearby cafes.
+                    अच्छा experience रहा.”
+                </p>
+                <p class="review-author">– Anjali Meena</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐</div>
+                <p class="review-text">
+                    “Good place for evening coffee. Seating is comfortable and menu has many options.”
+                </p>
+                <p class="review-author">– Vikas Yadav</p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                <p class="review-text">
+                    “Visited late night. Coffee and pizza both were good. Will definitely come again.”
+                </p>
+                <p class="review-author">– Pooja Verma</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+        <h2 id="contact-title">Visit Us</h2>
+
+        <div class="contact-info">
+            <div class="info-item">
+                <h3 id="contact-address-title">Address</h3>
+                <p id="contact-address">
+                    Central Spine, Plot 08, Hare Krishna Marg,
+                    Opposite Akshya Patra, Jagatpura,
+                    Jaipur – 302017
+                </p>
+            </div>
+
+            <div class="info-item">
+                <h3 id="contact-phone-title">Phone</h3>
+                <p><a href="tel:+917727066475">077270 66475</a></p>
+            </div>
+
+            <div class="info-item">
+                <h3 id="contact-hours-title">Hours</h3>
+                <p id="contact-hours">Open • Closes at 12:00 AM</p>
+            </div>
+        </div>
+
+        <a href="https://maps.app.goo.gl/KC2rJRNW9Cz3LtXd8" target="_blank" class="btn btn-map">
+            <span id="map-btn-text">Locate on Map</span>
+        </a>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p id="footer-text">© 2025 Caff Own Coffee, Jagatpura</p>
+    </div>
+</footer>
+
+<script>
+let currentLang = 'en';
+
+const translations = {
+    en: {
+        langBtn: 'हिंदी में देखें',
+        'header-title': 'Caff Own Coffee',
+        'header-subtitle': 'Coffee Shop in Jagatpura, Jaipur',
+        'rating-text': '4.8 (145 reviews)',
+        'open-badge': 'Open',
+        'hero-title': 'Cafe at Central Spine, Jagatpura',
+        'hero-text': 'Coffee, food, desserts and late-night dining',
+        'whatsapp-btn': 'WhatsApp',
+        'call-btn': 'Call',
+        'about-title': 'About Caff Own Coffee',
+        'about-text': 'A coffee shop in Jagatpura offering espresso-based coffee, cold brews, frappes, mocktails, pizzas, wraps, sandwiches, Chinese food and desserts. Open till midnight with dine-in, takeaway and delivery options.',
+        'feature1-title': 'Dine-In',
+        'feature1-text': 'Available',
+        'feature2-title': 'Takeaway',
+        'feature2-text': 'Available',
+        'feature3-title': 'Drive-Through',
+        'feature3-text': 'Available',
+        'feature4-title': 'Delivery',
+        'feature4-text': 'Available',
+        'contact-title': 'Visit Us',
+        'contact-address-title': 'Address',
+        'contact-phone-title': 'Phone',
+        'contact-hours-title': 'Hours',
+        'contact-hours': 'Open • Closes at 12:00 AM',
+        'map-btn-text': 'Locate on Map',
+        'footer-text': '© 2025 Caff Own Coffee, Jagatpura'
+    },
+    hi: {
+        langBtn: 'View in English',
+        'header-title': 'कैफ ओन कॉफी',
+        'header-subtitle': 'जगतपुरा, जयपुर में कॉफी शॉप',
+        'rating-text': '4.8 (145 समीक्षाएं)',
+        'open-badge': 'खुला है',
+        'hero-title': 'सेंट्रल स्पाइन, जगतपुरा में कैफे',
+        'hero-text': 'कॉफी, भोजन, डेज़र्ट और लेट-नाइट डाइनिंग',
+        'whatsapp-btn': 'WhatsApp',
+        'call-btn': 'कॉल करें',
+        'about-title': 'कैफ ओन कॉफी के बारे में',
+        'about-text': 'जगतपुरा में स्थित एक कॉफी शॉप जो एस्प्रेसो कॉफी, कोल्ड ब्रू, फ्रैपे, मॉकटेल, पिज़्ज़ा और डेज़र्ट प्रदान करती है। आधी रात तक खुली रहती है।',
+        'feature1-title': 'डाइन-इन',
+        'feature1-text': 'उपलब्ध',
+        'feature2-title': 'टेकअवे',
+        'feature2-text': 'उपलब्ध',
+        'feature3-title': 'ड्राइव-थ्रू',
+        'feature3-text': 'उपलब्ध',
+        'feature4-title': 'डिलीवरी',
+        'feature4-text': 'उपलब्ध',
+        'contact-title': 'हमसे मिलें',
+        'contact-address-title': 'पता',
+        'contact-phone-title': 'फ़ोन',
+        'contact-hours-title': 'समय',
+        'contact-hours': 'खुला है • रात 12:00 बजे बंद',
+        'map-btn-text': 'मैप पर देखें',
+        'footer-text': '© 2025 कैफ ओन कॉफी, जगतपुरा'
+    }
+};
+
+function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'hi' : 'en';
+    for (const key in translations[currentLang]) {
+        const el = document.getElementById(key);
+        if (el) el.textContent = translations[currentLang][key];
+    }
+}
+</script>
+
+</body>
+</html>
